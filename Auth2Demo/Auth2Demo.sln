@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auth2Demo", "Auth2Demo\Auth2Demo.csproj", "{0C77EB1E-FBEC-4F69-8D07-CE2FA5EB5A71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auth2Demo.Tests", "Auth2Demo.Tests\Auth2Demo.Tests.csproj", "{FBAB1E94-D33B-4C42-B8D8-1DB1C2347CB0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C77EB1E-FBEC-4F69-8D07-CE2FA5EB5A71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C77EB1E-FBEC-4F69-8D07-CE2FA5EB5A71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C77EB1E-FBEC-4F69-8D07-CE2FA5EB5A71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C77EB1E-FBEC-4F69-8D07-CE2FA5EB5A71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBAB1E94-D33B-4C42-B8D8-1DB1C2347CB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBAB1E94-D33B-4C42-B8D8-1DB1C2347CB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBAB1E94-D33B-4C42-B8D8-1DB1C2347CB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBAB1E94-D33B-4C42-B8D8-1DB1C2347CB0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
