@@ -12,6 +12,12 @@ namespace Auth2Demo
     {
         private AuthenticationScheme _scheme;
         private HttpContext _context;
+        private IUserRepository _userRepository;
+
+        public BasicAuthenticationHandler(IUserRepository userRepository)
+        {
+            _userRepository = userRepository;
+        }
 
         public async Task InitializeAsync(AuthenticationScheme scheme, HttpContext context)
         {
@@ -29,13 +35,13 @@ namespace Auth2Demo
                 var parts = nameAndPassword.Split(":");
                 var (name, password) = (parts[0], parts[1]);
 
-                // TODO: lookup
+                var id = _userRepository.LoadUser(name, password);
 
                 var principal = new ClaimsPrincipal(new []
                 {
                     new ClaimsIdentity(new[]
                     {
-                        new Claim(ClaimTypes.NameIdentifier, "42"),
+                        new Claim(ClaimTypes.NameIdentifier, id.ToString("0")),
                         new Claim(ClaimTypes.Name, name),
                     }),
                 });

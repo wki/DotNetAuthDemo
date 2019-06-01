@@ -24,11 +24,14 @@ namespace Auth2Demo.Controllers
         public ActionResult<string> Secret()
         {
             var name = "";
+            var id = "";
             var user = ControllerContext?.HttpContext?.User;
             if (user != null && user.HasClaim(c => c.Type == ClaimTypes.Name))
                 name = user.Claims.First(c => c.Type == ClaimTypes.Name).Value;
+            if (user != null && user.HasClaim(c => c.Type == ClaimTypes.NameIdentifier))
+                id = user.Claims.First(c => c.Type == ClaimTypes.NameIdentifier).Value;
 
-            return Ok($"huhu:{name}");
+            return Ok($"huhu:{name}/{id}");
         }
 
         // GET api/values/5

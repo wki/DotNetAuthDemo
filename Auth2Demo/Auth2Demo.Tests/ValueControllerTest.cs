@@ -3,22 +3,32 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
+using FakeItEasy;
 using Microsoft.AspNetCore.Mvc.Testing;
+using Microsoft.Extensions.DependencyInjection;
 using Xunit;
 
 namespace Auth2Demo.Tests
 {
     public class ValueControllerTest
     {
+        private readonly IUserRepository _userRepository;
         private readonly WebApplicationFactory<Startup> _factory;
 
         public ValueControllerTest()
         {
+            _userRepository = A.Fake<IUserRepository>();
+            A.CallTo(() => _userRepository.LoadUser(A<string>._, A<string>._))
+                .Returns(142);
+
             _factory = new WebApplicationFactory<Startup>()
                 .WithWebHostBuilder(builder =>
-                {
-
-                });
+                    {
+                        builder.ConfigureServices(services =>
+                        {
+                            services.AddSingleton(_userRepository);
+                        });
+                    });
         }
 
         [Fact]
@@ -32,7 +42,7 @@ namespace Auth2Demo.Tests
         }
 
         [Fact]
-        public async Task ValueController_Secure_Returns401()
+        public async Task ValueController_Secret_Returns401()
         {
             var client = _factory.CreateClient();
 
@@ -44,13 +54,13 @@ namespace Auth2Demo.Tests
         }
 
         [Fact]
-        public async Task ValueController_SecureAuthorized_Returns200()
+        public async Task ValueController_SecretAuthorized_Returns200()
         {
             // Arrange
             var client = _factory.CreateClient();
 
             // Act
-            var byteArray = Encoding.ASCII.GetBytes("username:password1234");
+            var byteArray = Encoding.ASCII.GetBytes("joedoe:secret");
             var authValue = Convert.ToBase64String(byteArray);
 
             var request = new HttpRequestMessage(HttpMethod.Get, "/api/values/secret");
@@ -63,7 +73,9 @@ namespace Auth2Demo.Tests
             Assert.Equal(
                 System.Net.HttpStatusCode.OK,
                 response.StatusCode);
-
+            Assert.Equal(
+                "huhu:joedoe/142",
+                await response.Content.ReadAsStringAsync());
         }
     }
 }

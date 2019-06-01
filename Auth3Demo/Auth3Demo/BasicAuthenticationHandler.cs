@@ -12,8 +12,11 @@ namespace Auth3Demo
 {
     public class BasicAuthenticationHandler: AuthenticationHandler<AuthenticationSchemeOptions>
     {
-        public BasicAuthenticationHandler(IOptionsMonitor<AuthenticationSchemeOptions> options, ILoggerFactory logger, UrlEncoder encoder, ISystemClock clock) : base(options, logger, encoder, clock)
+        private readonly IUserRepository _userRepository;
+
+        public BasicAuthenticationHandler(IOptionsMonitor<AuthenticationSchemeOptions> options, ILoggerFactory logger, UrlEncoder encoder, ISystemClock clock, IUserRepository userRepository) : base(options, logger, encoder, clock)
         {
+            _userRepository = userRepository;
         }
 
         protected override async Task<AuthenticateResult> HandleAuthenticateAsync()
@@ -26,13 +29,13 @@ namespace Auth3Demo
                 var parts = nameAndPassword.Split(":");
                 var (name, password) = (parts[0], parts[1]);
 
-                // TODO: lookup
+                var id = _userRepository.LoadUser(name, password);
 
                 var principal = new ClaimsPrincipal(new []
                 {
                     new ClaimsIdentity(new[]
                     {
-                        new Claim(ClaimTypes.NameIdentifier, "42"),
+                        new Claim(ClaimTypes.NameIdentifier, id.ToString("0")),
                         new Claim(ClaimTypes.Name, name),
                     }),
                 });
