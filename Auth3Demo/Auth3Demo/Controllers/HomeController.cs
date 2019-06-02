@@ -15,7 +15,7 @@ namespace Auth3Demo.Controllers
             return Ok("huhu");
         }
 
-        [Authorize(Policy = "Users")]
+        [Authorize]
         [HttpGet("secret")]
         public IActionResult Secret()
         {

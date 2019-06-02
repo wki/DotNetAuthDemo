@@ -39,6 +39,7 @@ namespace Auth3Demo
                                         builder.AddAuthenticationSchemes("Basic");
                                         builder.RequireClaim(ClaimTypes.Name);
                                     });
+                                authOptions.DefaultPolicy = authOptions.GetPolicy("Users");
                             });
                             services.AddControllers()
                                 .AddNewtonsoftJson();

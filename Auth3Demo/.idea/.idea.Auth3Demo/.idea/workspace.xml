@@ -2,25 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f7ad4a0-016e-4cd6-9d96-735aefe207fa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Auth2Demo/.idea/.idea.Auth2Demo/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Auth2Demo/.idea/.idea.Auth2Demo/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Auth2Demo/Auth2Demo/IUserRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Auth2Demo/Auth2Demo/UserRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Auth3Demo/.idea/contentModel.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Auth3Demo/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Auth3Demo/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Auth3Demo/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Auth3Demo/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Auth3Demo/IUserRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Auth3Demo/UserRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Auth2Demo/Auth2Demo.Tests/Auth2Demo.Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Auth2Demo/Auth2Demo.Tests/Auth2Demo.Tests.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Auth2Demo/Auth2Demo.Tests/ValueControllerTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Auth2Demo/Auth2Demo.Tests/ValueControllerTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Auth2Demo/Auth2Demo/BasicAuthenticationHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Auth2Demo/Auth2Demo/BasicAuthenticationHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Auth2Demo/Auth2Demo/Controllers/ValuesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Auth2Demo/Auth2Demo/Controllers/ValuesController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Auth2Demo/Auth2Demo/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Auth2Demo/Auth2Demo/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auth3Demo.Tests/Auth3Demo.Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Auth3Demo.Tests/Auth3Demo.Tests.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auth3Demo.Tests/HomeControllerTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auth3Demo.Tests/HomeControllerTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auth3Demo/BasicAuthenticationHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auth3Demo/BasicAuthenticationHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Auth2Demo/.idea/.idea.Auth2Demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Auth2Demo/.idea/.idea.Auth2Demo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Auth3Demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Auth3Demo/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Auth3Demo/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auth3Demo/Controllers/HomeController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Auth3Demo/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auth3Demo/Program.cs" afterDir="false" />
     </list>
@@ -34,23 +17,23 @@
     <splitter split-orientation="horizontal" split-proportion="0.47674417">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Auth3Demo/Program.cs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="303">
-                  <caret line="31" column="78" selection-start-line="31" selection-start-column="78" selection-end-line="31" selection-end-column="78" />
+                <state relative-caret-position="874">
+                  <caret line="63" selection-start-line="13" selection-end-line="63" />
                   <folding>
-                    <marker date="1559400287043" expanded="false" signature="6:323" ph="..." />
-                    <marker date="1559400287043" expanded="true" signature="344:2670" ph="{...}" />
-                    <marker date="1559400287043" expanded="true" signature="371:2668" ph="{...}" />
-                    <marker date="1559400287043" expanded="true" signature="701:2660" ph="{...}" />
-                    <marker date="1559400287043" expanded="true" signature="899:2214" ph="{...}" />
-                    <marker date="1559400287043" expanded="true" signature="929:1017" ph="/* tryAdd dependencies needed as mocked services ... */" />
-                    <marker date="1559400287043" expanded="true" signature="1433:1851" ph="{...}" />
-                    <marker date="1559400287043" expanded="true" signature="1618:1819" ph="{...}" />
-                    <marker date="1559400287043" expanded="true" signature="2049:2186" ph="{...}" />
-                    <marker date="1559400287043" expanded="true" signature="2282:2640" ph="{...}" />
-                    <marker date="1559400287043" expanded="true" signature="2521:2612" ph="{...}" />
+                    <marker date="1559402547773" expanded="false" signature="6:323" ph="..." />
+                    <marker date="1559402547773" expanded="true" signature="344:2762" ph="{...}" />
+                    <marker date="1559402547773" expanded="true" signature="371:2760" ph="{...}" />
+                    <marker date="1559402547773" expanded="true" signature="701:2752" ph="{...}" />
+                    <marker date="1559402547773" expanded="true" signature="899:2306" ph="{...}" />
+                    <marker date="1559402547773" expanded="true" signature="929:1017" ph="/* tryAdd dependencies needed as mocked services ... */" />
+                    <marker date="1559402547773" expanded="true" signature="1433:1943" ph="{...}" />
+                    <marker date="1559402547773" expanded="true" signature="1618:1819" ph="{...}" />
+                    <marker date="1559402547773" expanded="true" signature="2141:2278" ph="{...}" />
+                    <marker date="1559402547773" expanded="true" signature="2374:2732" ph="{...}" />
+                    <marker date="1559402547773" expanded="true" signature="2613:2704" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -59,7 +42,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Auth3Demo/BasicAuthenticationHandler.cs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="510">
+                <state relative-caret-position="459">
                   <caret line="38" selection-start-line="38" selection-end-line="38" />
                   <folding>
                     <marker date="1559400521454" expanded="false" signature="6:271" ph="..." />
@@ -76,17 +59,17 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Auth3Demo/Controllers/HomeController.cs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
-                  <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+                <state relative-caret-position="459">
+                  <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
                   <folding>
-                    <marker date="1559401068027" expanded="false" signature="6:122" ph="..." />
-                    <marker date="1559401068027" expanded="true" signature="155:991" ph="{...}" />
-                    <marker date="1559401068027" expanded="true" signature="223:989" ph="{...}" />
-                    <marker date="1559401068027" expanded="true" signature="313:364" ph="{...}" />
-                    <marker date="1559401068027" expanded="true" signature="469:983" ph="{...}" />
+                    <marker date="1559402269643" expanded="false" signature="6:122" ph="..." />
+                    <marker date="1559402269643" expanded="true" signature="155:973" ph="{...}" />
+                    <marker date="1559402269643" expanded="true" signature="223:971" ph="{...}" />
+                    <marker date="1559402269643" expanded="true" signature="313:364" ph="{...}" />
+                    <marker date="1559402269643" expanded="true" signature="451:965" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -95,7 +78,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Auth3Demo/UserRepository.cs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="34">
+                <state relative-caret-position="17">
                   <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
                   <folding>
                     <marker date="1559400208627" expanded="true" signature="19:189" ph="{...}" />
@@ -113,10 +96,10 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Auth3Demo.Tests/HomeControllerTest.cs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="221">
-                  <caret line="22" selection-start-line="22" selection-end-line="22" />
+                <state relative-caret-position="161">
+                  <caret line="43" column="18" lean-forward="true" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
                   <folding>
-                    <marker date="1559401411015" expanded="false" signature="6:268" ph="..." />
+                    <marker date="1559401411015" expanded="true" signature="6:268" ph="..." />
                     <marker date="1559401411015" expanded="true" signature="295:2752" ph="{...}" />
                     <marker date="1559401411015" expanded="true" signature="349:2750" ph="{...}" />
                     <marker date="1559401411015" expanded="true" signature="478:704" ph="{...}" />
@@ -126,6 +109,24 @@
                     <marker date="1559401411015" expanded="true" signature="1672:1952" ph="{...}" />
                     <marker date="1559401411015" expanded="true" signature="2046:2744" ph="{...}" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Auth3Demo.Tests/Auth3Demo.Tests.csproj">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="272">
+                  <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Auth3Demo/Auth3Demo.csproj">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="238">
+                  <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
                 </state>
               </provider>
             </entry>
@@ -150,9 +151,9 @@
       <list>
         <option value="$PROJECT_DIR$/Auth3Demo.Tests/Auth3Demo.Tests.csproj" />
         <option value="$PROJECT_DIR$/Auth3Demo/Auth3Demo.csproj" />
-        <option value="$PROJECT_DIR$/Auth3Demo/Program.cs" />
         <option value="$PROJECT_DIR$/Auth3Demo/BasicAuthenticationHandler.cs" />
         <option value="$PROJECT_DIR$/Auth3Demo/Controllers/HomeController.cs" />
+        <option value="$PROJECT_DIR$/Auth3Demo/Program.cs" />
         <option value="$PROJECT_DIR$/Auth3Demo.Tests/HomeControllerTest.cs" />
       </list>
     </option>
@@ -165,8 +166,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="241" />
-    <option name="y" value="23" />
+    <option name="x" value="574" />
+    <option name="y" value="34" />
     <option name="width" value="1633" />
     <option name="height" value="1072" />
   </component>
@@ -189,17 +190,6 @@
               <item name="" type="784c90a0:SolutionExplorerRootNode" />
               <item name="Auth3Demo" type="24d0babc:SolutionExplorerModelNode" />
               <item name="Auth3Demo" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="Auth3Demo" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Auth3Demo" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Controllers" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="Auth3Demo" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Auth3Demo.Tests" type="24d0babc:SolutionExplorerModelNode" />
             </path>
           </expand>
           <select />
@@ -265,12 +255,13 @@
       <workItem from="1559316514533" duration="1010000" />
       <workItem from="1559399453312" duration="292000" />
       <workItem from="1559399765593" duration="79000" />
-      <workItem from="1559399864069" duration="1699000" />
+      <workItem from="1559399864069" duration="4852000" />
+      <workItem from="1559464584299" duration="1052000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4172000" />
+    <option name="totallyTimeSpent" value="8377000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -282,10 +273,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="241" y="23" width="1633" height="1072" extended-state="0" />
+    <frame x="574" y="34" width="1633" height="1072" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15147705" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15336266" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -300,7 +291,7 @@
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.40083945" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info active="true" anchor="bottom" id="Unit Tests" order="12" visible="true" weight="0.18673469" />
+      <window_info anchor="bottom" id="Unit Tests" order="12" visible="true" weight="0.18673469" />
       <window_info anchor="bottom" id="Terminal" order="13" />
       <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="15" weight="0.32948583" />
@@ -309,7 +300,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Errors In Solution" order="3" />
       <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="Unit Tests Coverage" order="5" weight="0.32941177" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="5" weight="0.32935262" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,7 +310,7 @@
     <option name="coveragePercentColumnWidth" value="150" />
     <option name="sortOrder" value="DESCENDING" />
     <option name="sortedColumn" value="1" />
-    <option name="symbolColumnWidth" value="211" />
+    <option name="symbolColumnWidth" value="235" />
     <coverage-tree-state>
       <expand>
         <path>
@@ -392,65 +383,18 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Auth3Demo.Tests/Auth3Demo.Tests.csproj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Auth3Demo/Auth3Demo.csproj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Auth3Demo/IUserRepository.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
-            <marker date="1559400177998" expanded="true" signature="19:128" ph="{...}" />
             <marker date="1559400177998" expanded="true" signature="58:126" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Auth3Demo/UserRepository.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-          <folding>
-            <marker date="1559400208627" expanded="true" signature="19:189" ph="{...}" />
-            <marker date="1559400208627" expanded="true" signature="70:187" ph="{...}" />
-            <marker date="1559400208627" expanded="true" signature="138:181" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Auth3Demo/Program.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="31" column="78" selection-start-line="31" selection-start-column="78" selection-end-line="31" selection-end-column="78" />
-          <folding>
-            <marker date="1559400287043" expanded="false" signature="6:323" ph="..." />
-            <marker date="1559400287043" expanded="true" signature="344:2670" ph="{...}" />
-            <marker date="1559400287043" expanded="true" signature="371:2668" ph="{...}" />
-            <marker date="1559400287043" expanded="true" signature="701:2660" ph="{...}" />
-            <marker date="1559400287043" expanded="true" signature="899:2214" ph="{...}" />
-            <marker date="1559400287043" expanded="true" signature="929:1017" ph="/* tryAdd dependencies needed as mocked services ... */" />
-            <marker date="1559400287043" expanded="true" signature="1433:1851" ph="{...}" />
-            <marker date="1559400287043" expanded="true" signature="1618:1819" ph="{...}" />
-            <marker date="1559400287043" expanded="true" signature="2049:2186" ph="{...}" />
-            <marker date="1559400287043" expanded="true" signature="2282:2640" ph="{...}" />
-            <marker date="1559400287043" expanded="true" signature="2521:2612" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Auth3Demo/BasicAuthenticationHandler.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
+        <state relative-caret-position="459">
           <caret line="38" selection-start-line="38" selection-end-line="38" />
           <folding>
             <marker date="1559400521454" expanded="false" signature="6:271" ph="..." />
@@ -466,12 +410,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Auth3Demo/Controllers/HomeController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+          <folding>
+            <marker date="1559402269643" expanded="false" signature="6:122" ph="..." />
+            <marker date="1559402269643" expanded="true" signature="155:973" ph="{...}" />
+            <marker date="1559402269643" expanded="true" signature="223:971" ph="{...}" />
+            <marker date="1559402269643" expanded="true" signature="313:364" ph="{...}" />
+            <marker date="1559402269643" expanded="true" signature="451:965" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Auth3Demo/UserRepository.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+          <folding>
+            <marker date="1559400208627" expanded="true" signature="19:189" ph="{...}" />
+            <marker date="1559400208627" expanded="true" signature="70:187" ph="{...}" />
+            <marker date="1559400208627" expanded="true" signature="138:181" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Auth3Demo/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="63" selection-start-line="13" selection-end-line="63" />
+          <folding>
+            <marker date="1559402547773" expanded="false" signature="6:323" ph="..." />
+            <marker date="1559402547773" expanded="true" signature="344:2762" ph="{...}" />
+            <marker date="1559402547773" expanded="true" signature="371:2760" ph="{...}" />
+            <marker date="1559402547773" expanded="true" signature="701:2752" ph="{...}" />
+            <marker date="1559402547773" expanded="true" signature="899:2306" ph="{...}" />
+            <marker date="1559402547773" expanded="true" signature="929:1017" ph="/* tryAdd dependencies needed as mocked services ... */" />
+            <marker date="1559402547773" expanded="true" signature="1433:1943" ph="{...}" />
+            <marker date="1559402547773" expanded="true" signature="1618:1819" ph="{...}" />
+            <marker date="1559402547773" expanded="true" signature="2141:2278" ph="{...}" />
+            <marker date="1559402547773" expanded="true" signature="2374:2732" ph="{...}" />
+            <marker date="1559402547773" expanded="true" signature="2613:2704" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Auth3Demo/Auth3Demo.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Auth3Demo.Tests/Auth3Demo.Tests.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Auth3Demo.Tests/HomeControllerTest.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="161">
+          <caret line="43" column="18" lean-forward="true" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
           <folding>
-            <marker date="1559401411015" expanded="false" signature="6:268" ph="..." />
+            <marker date="1559401411015" expanded="true" signature="6:268" ph="..." />
             <marker date="1559401411015" expanded="true" signature="295:2752" ph="{...}" />
             <marker date="1559401411015" expanded="true" signature="349:2750" ph="{...}" />
             <marker date="1559401411015" expanded="true" signature="478:704" ph="{...}" />
@@ -480,20 +484,6 @@
             <marker date="1559401411015" expanded="true" signature="1274:1593" ph="{...}" />
             <marker date="1559401411015" expanded="true" signature="1672:1952" ph="{...}" />
             <marker date="1559401411015" expanded="true" signature="2046:2744" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Auth3Demo/Controllers/HomeController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
-          <folding>
-            <marker date="1559401068027" expanded="false" signature="6:122" ph="..." />
-            <marker date="1559401068027" expanded="true" signature="155:991" ph="{...}" />
-            <marker date="1559401068027" expanded="true" signature="223:989" ph="{...}" />
-            <marker date="1559401068027" expanded="true" signature="313:364" ph="{...}" />
-            <marker date="1559401068027" expanded="true" signature="469:983" ph="{...}" />
           </folding>
         </state>
       </provider>

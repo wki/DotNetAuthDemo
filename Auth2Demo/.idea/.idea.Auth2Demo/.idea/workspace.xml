@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee565c85-2e97-4ace-abe4-62cc2c569891" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Auth2Demo/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Auth2Demo/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Auth2Demo/IUserRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Auth2Demo/UserRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Auth3Demo/.idea/.idea.Auth3Demo/.idea/contentModel.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Auth3Demo/.idea/.idea.Auth3Demo/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Auth3Demo/.idea/.idea.Auth3Demo/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Auth3Demo/.idea/.idea.Auth3Demo/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Auth3Demo/.idea/.idea.Auth3Demo/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Auth3Demo/Auth3Demo/IUserRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Auth3Demo/Auth3Demo/UserRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auth2Demo.Tests/Auth2Demo.Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Auth2Demo.Tests/Auth2Demo.Tests.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auth2Demo.Tests/ValueControllerTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auth2Demo.Tests/ValueControllerTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auth2Demo/BasicAuthenticationHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auth2Demo/BasicAuthenticationHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auth2Demo/Controllers/ValuesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auth2Demo/Controllers/ValuesController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auth2Demo/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Auth2Demo/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Auth3Demo/Auth3Demo.Tests/Auth3Demo.Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Auth3Demo/Auth3Demo.Tests/Auth3Demo.Tests.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Auth3Demo/Auth3Demo.Tests/HomeControllerTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Auth3Demo/Auth3Demo.Tests/HomeControllerTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Auth3Demo/Auth3Demo/BasicAuthenticationHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Auth3Demo/Auth3Demo/BasicAuthenticationHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Auth3Demo/.idea/.idea.Auth3Demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Auth3Demo/.idea/.idea.Auth3Demo/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Auth3Demo/Auth3Demo/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Auth3Demo/Auth3Demo/Controllers/HomeController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Auth3Demo/Auth3Demo/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Auth3Demo/Auth3Demo/Program.cs" afterDir="false" />
     </list>
