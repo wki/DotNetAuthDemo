@@ -4,6 +4,7 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using FakeItEasy;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.TestHost;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -11,7 +12,7 @@ using Xunit;
 
 namespace Auth3Demo.Tests
 {
-    public class HomeControllerTest: IAsyncLifetime
+    public class HomeControllerTest : IAsyncLifetime
     {
         private IUserRepository _userRepository;
         private IHost _host;
@@ -19,12 +20,12 @@ namespace Auth3Demo.Tests
         public async Task InitializeAsync()
         {
             _userRepository = A.Fake<IUserRepository>();
-            A.CallTo(() => 
+            A.CallTo(() =>
                     _userRepository.LoadUser(
-                        A<string>.That.Matches(u => u == "joedoe"), 
+                        A<string>.That.Matches(u => u == "joedoe"),
                         A<string>.That.Matches(p => p == "secret")
-                        )
                     )
+                )
                 .Returns(142);
             _host = await BuildHost();
         }
@@ -34,14 +35,15 @@ namespace Auth3Demo.Tests
         public Task DisposeAsync() => Task.CompletedTask;
 
         private Task<IHost> BuildHost() =>
-            Program.CreateHostBuilder(new string[]{})
+            Program.CreateHostBuilder(new string[] { })
                 .ConfigureWebHost(webBuilder =>
                 {
-                    webBuilder.UseTestServer();
-                    webBuilder.ConfigureServices(services =>
-                    {
-                        services.AddSingleton(_userRepository);
-                    });
+                    webBuilder
+                        .ConfigureServices(services =>
+                        {
+                            services.AddSingleton(_userRepository);
+                        })
+                        .UseTestServer();
                 })
                 .StartAsync();
 
