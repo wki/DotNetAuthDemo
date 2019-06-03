@@ -1,4 +1,5 @@
 using System;
+using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
@@ -18,22 +19,19 @@ namespace Auth2Demo.Tests
         public ValueControllerTest()
         {
             _userRepository = A.Fake<IUserRepository>();
-            A.CallTo(() => 
+            A.CallTo(() =>
                     _userRepository.LoadUser(
-                        A<string>.That.Matches(u => u == "joedoe"), 
+                        A<string>.That.Matches(u => u == "joedoe"),
                         A<string>.That.Matches(p => p == "secret")
-                        )
                     )
+                )
                 .Returns(142);
 
             _factory = new WebApplicationFactory<Startup>()
                 .WithWebHostBuilder(builder =>
-                    {
-                        builder.ConfigureServices(services =>
-                        {
-                            services.AddSingleton(_userRepository);
-                        });
-                    });
+                {
+                    builder.ConfigureServices(services => { services.AddSingleton(_userRepository); });
+                });
         }
 
         private HttpClient Client => _factory.CreateClient();
@@ -56,7 +54,7 @@ namespace Auth2Demo.Tests
 
             // Assert
             Assert.Equal(
-                System.Net.HttpStatusCode.Unauthorized,
+                HttpStatusCode.Unauthorized,
                 response.StatusCode);
         }
 
@@ -74,7 +72,7 @@ namespace Auth2Demo.Tests
 
             // Assert
             Assert.Equal(
-                System.Net.HttpStatusCode.OK,
+                HttpStatusCode.OK,
                 response.StatusCode);
             Assert.Equal(
                 "huhu:joedoe/142",
