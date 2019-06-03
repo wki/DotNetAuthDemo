@@ -19,10 +19,17 @@ namespace Auth3Demo.Tests
         public async Task InitializeAsync()
         {
             _userRepository = A.Fake<IUserRepository>();
-            A.CallTo(() => _userRepository.LoadUser(A<string>._, A<string>._))
+            A.CallTo(() => 
+                    _userRepository.LoadUser(
+                        A<string>.That.Matches(u => u == "joedoe"), 
+                        A<string>.That.Matches(p => p == "secret")
+                        )
+                    )
                 .Returns(142);
             _host = await BuildHost();
         }
+
+        private HttpClient Client => _host.GetTestClient();
 
         public Task DisposeAsync() => Task.CompletedTask;
 
@@ -42,8 +49,7 @@ namespace Auth3Demo.Tests
         public async Task ValuesController_Index_Returns200()
         {
             // Act
-            var response = await _host.GetTestClient()
-                .GetAsync("/home");
+            var response = await Client.GetAsync("/home");
 
             // Assert
             Assert.True(response.IsSuccessStatusCode);
@@ -56,8 +62,7 @@ namespace Auth3Demo.Tests
         public async Task ValuesController_Secret_Returns401()
         {
             // Act
-            var response = await _host.GetTestClient()
-                .GetAsync("/home/secret");
+            var response = await Client.GetAsync("/home/secret");
 
             // Assert
             Assert.Equal(
@@ -75,8 +80,7 @@ namespace Auth3Demo.Tests
             var request = new HttpRequestMessage(HttpMethod.Get, "/home/secret");
             request.Headers.Authorization = new AuthenticationHeaderValue("Basic", authValue);
 
-            var response = await _host.GetTestClient()
-                .SendAsync(request);
+            var response = await Client.SendAsync(request);
 
             // Assert
             Assert.Equal(

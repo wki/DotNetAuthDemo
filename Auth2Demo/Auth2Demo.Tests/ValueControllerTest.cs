@@ -18,7 +18,12 @@ namespace Auth2Demo.Tests
         public ValueControllerTest()
         {
             _userRepository = A.Fake<IUserRepository>();
-            A.CallTo(() => _userRepository.LoadUser(A<string>._, A<string>._))
+            A.CallTo(() => 
+                    _userRepository.LoadUser(
+                        A<string>.That.Matches(u => u == "joedoe"), 
+                        A<string>.That.Matches(p => p == "secret")
+                        )
+                    )
                 .Returns(142);
 
             _factory = new WebApplicationFactory<Startup>()
@@ -31,23 +36,25 @@ namespace Auth2Demo.Tests
                     });
         }
 
+        private HttpClient Client => _factory.CreateClient();
+
         [Fact]
         public async Task ValueController_Index_Returns200()
         {
-            var client = _factory.CreateClient();
+            // Act
+            var response = await Client.GetAsync("/api/values");
 
-            var response = await client.GetAsync("/api/values");
-
+            // Assert
             Assert.True(response.IsSuccessStatusCode);
         }
 
         [Fact]
         public async Task ValueController_Secret_Returns401()
         {
-            var client = _factory.CreateClient();
+            // Act
+            var response = await Client.GetAsync("/api/values/secret");
 
-            var response = await client.GetAsync("/api/values/secret");
-
+            // Assert
             Assert.Equal(
                 System.Net.HttpStatusCode.Unauthorized,
                 response.StatusCode);
@@ -56,9 +63,6 @@ namespace Auth2Demo.Tests
         [Fact]
         public async Task ValueController_SecretAuthorized_Returns200()
         {
-            // Arrange
-            var client = _factory.CreateClient();
-
             // Act
             var byteArray = Encoding.ASCII.GetBytes("joedoe:secret");
             var authValue = Convert.ToBase64String(byteArray);
@@ -66,8 +70,7 @@ namespace Auth2Demo.Tests
             var request = new HttpRequestMessage(HttpMethod.Get, "/api/values/secret");
             request.Headers.Authorization = new AuthenticationHeaderValue("Basic", authValue);
 
-            var response = await client
-                .SendAsync(request);
+            var response = await Client.SendAsync(request);
 
             // Assert
             Assert.Equal(
