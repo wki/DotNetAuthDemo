@@ -12,6 +12,9 @@ using Xunit;
 
 namespace Auth3Demo.Tests
 {
+    /// <summary>
+    /// Sample End-To-End Test with a homegrown Test-Server initializer
+    /// </summary>
     public class HomeControllerTest : IAsyncLifetime
     {
         private IUserRepository _userRepository;
